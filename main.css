@@ -1,0 +1,52 @@
+body {
+    background-color: lightblue;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.background-section{
+    background-color: rgba(105, 105, 105, 0.3);
+    padding-top: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 1px;
+    margin: 10px;
+}
+
+.experience-section{
+    background-color: rgba(105, 105, 105, 0.3);
+    padding-top: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 1px;
+    margin: 10px;
+}
+.projects-section{
+    background-color: rgba(105, 105, 105, 0.3);
+    padding-top: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 1px;
+    margin: 10px;
+}
+.interests-section{
+    background-color: rgba(105, 105, 105, 0.3);
+    padding-top: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 1px;
+    margin: 10px;
+}
+.contact-section{
+    background-color: rgba(105, 105, 105, 0.3);
+    padding-top: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 1px;
+    margin: 10px;
+}
+
+h1 {
+    color:darkslateblue;
+
+}
