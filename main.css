@@ -1,49 +1,275 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: lightblue;
-    vertical-align: middle;
+    vertical-align:middle;
     align-items: center;
+    padding-top: 90px;
 }
 
-.background-section{
-    background-color: rgba(105, 105, 105, 0.3);
-    padding-top: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 1px;
-    margin: 10px;
+/* NORMAL STYLES */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%; /* Resets the Width Back to 100%, since "position: fixed" overwrites that*/
+    backdrop-filter: blur(6px);
 }
 
-.experience-section{
-    background-color: rgba(105, 105, 105, 0.3);
-    padding-top: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 1px;
-    margin: 10px;
+.top-bar {
+    background-color: rgb(39, 44, 51);
+    transition: all 0.5s;
 }
-.projects-section{
-    background-color: rgba(105, 105, 105, 0.3);
-    padding-top: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 1px;
-    margin: 10px;
+
+.top-bar-scrolled {
+    background-color: rgb(39, 44, 51, 0.7);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15)
 }
-.interests-section{
-    background-color: rgba(105, 105, 105, 0.3);
-    padding-top: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 1px;
-    margin: 10px;
+
+.top-bar__content {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 30px;
+    height: 30px;
+    color: rgba(2555, 255, 255, 0.35);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    column-gap: 20px;
 }
-.contact-section{
+
+.icon {
+    margin-right: 3px;
+    color: rgba(2555, 255, 255, 0.17);
+}
+
+.bottom-bar {
+    background-color: rgb(19, 22, 26);
+    transition: all 0.5s;
+}
+
+.bottom-bar-scrolled {
+    background-color: rgb(19, 22, 26, 0.7);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15)
+}
+
+.bottom-bar__content {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 30px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.logo__img {
+ height: 30px;
+}
+
+.logo__text {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.5
+}
+
+.nav {
+    transition: all 0.3s ease-in-out;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 40px;
+}
+
+.nav__item {
+
+}
+
+.nav__link {
+    color: rgba(255, 255, 255, 0.75);
+    transition: all 0.2s;
+    position: relative;
+}
+
+.nav__link:hover, 
+.nav__link:focus {
+    color: rgba(255, 255, 255, 1);
+    }
+
+.nav__link::after {
+    content: '';
+    height: 4px;
+    width: 100%;
+    background: rgb(0, 183, 255);
+    position: absolute;
+    left: 0;
+    bottom: -22px;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+
+.nav__link:hover::after {
+    opacity: 1;
+}
+
+.btn {
+    color: #fff;
+    background-color: #0071e3;
+    padding: 8px 20px;
+    border-radius: 1000px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background-color: #007bf5;
+}
+
+.hamburger {
+ display: none;
+}
+
+.hamburger:hover {
+    cursor:pointer;
+}
+
+.bar {
+    height: 2px;
+    width: 27px;
+    background-color: #fff;
+    margin: 5px 0;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+}
+
+/* FOR JS */
+.nav--open {
+    transform: translateX(0%) !important;
+}
+
+.hamburger--open .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger--open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger--open .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* MEDIA QUERIES */
+@media(max-width: 650px) {
+    .nav {
+        position: fixed;
+        top: 90px;
+        left: 0px;
+        bottom: 67%;
+        background-color: rgb(19, 22, 26);
+        width: 100%;
+        padding: 10px, 0 25px;
+        transform: translateX(-100%);
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: center; /* To center the vertical (column) flow, use align-items, as swapping the flex direction has reversed this*/
+        row-gap: 20px;
+    }
+
+    .nav__link {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 11px;
+        padding: 7px 17px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+
+.main-sec{
     background-color: rgba(105, 105, 105, 0.3);
     padding-top: 1px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 1px;
     margin: 10px;
+    box-shadow: 5px 4px 2px rgb(109, 87, 229, 0.4);
+    scroll-margin-top: 105px;
+}
+
+.my-bg{
+    margin: 20px;
+}
+
+.my-exp{
+    margin: 20px;
+}
+.my-pr{
+    margin: 20px;
+}
+.my-int{
+    margin: 20px;
+}
+.my-con{
+    margin: 20px;
+}
+
+.main-art{
+    background-color: rgba(238, 238, 238, 0.8);
+    padding-top: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 1px;
+    margin: 10px;
+    
+}
+
+.exp-art{
+
+}
+
+.proj-art{
+
+}
+
+.int-art{
+
 }
 
 h1 {

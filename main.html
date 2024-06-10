@@ -2,80 +2,152 @@
 <html lang="en">
     <head>
         <title>My Portfolio</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="main.css"> 
+
+        <script defer src="script.js"></script>
+
     </head>
     <body>
-        <nav>
-            <a href="main.html">HOME</a> | 
-            <a href="#background-section">BACKGROUND</a> | 
-            <a href="#experience-section">EXPERIENCE</a> |
-            <a href="#projects-section">PROJECTS</a> |
-            <a href="#interests-section">INTERESTS</a> |
-            <a href="#contact-section">CONTACT</a> |
-        </nav>
-        <section class="background-section">
-            <article>
-                <h1>My Background</h1>
-                <ol>
-                  <li>bullet 1</li>
-                  <li>bullet 2</li>
-                  <li>bullet 3</li>
-                </ol>
-                <footer>
-                  <p>Enter BG Footer Here</p>
-                </footer>
-            </article>
+        <header class="header">
+          <div class="top-bar">
+            <div class="top-bar__content">
+              <section class="phone">
+                +1 (336) 406-8628
+              </section>
+              <section class="email">
+                jonahamicek@gmail.com
+              </section>
+            </div>
+          </div>
+          <div class="bottom-bar">
+            <div class="bottom-bar__content">
+              <a href="#" class="logo">
+                <img src="#" alt="logo" class="logo__img">
+                <span class="logo__text">Jonah Micek</span>
+              </a>
+
+              <nav class="nav nav--open">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="main.html" class="nav__link">HOME</a> 
+                  </li>
+                  <li class="nav__item">
+                    <a href="#background-section" class="nav__link">BACKGROUND</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#experience-section" class="nav__link">EXPERIENCE</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#projects-section" class="nav__link">PROJECTS</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#interests-section" class="nav__link">INTERESTS</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#contact-section" class="btn">CONTACT</a>
+                  </li>
+                </ul>
+            </nav>
+
+            <div class="hamburger hamburger--open">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+            </div>
+          </div>
+        </header>
+        
+        <section class="main-sec my-bg" id="background-section">
+          <h1>MY BACKGROUND</h1>
+          <article class="main-art">
+              <h1>My Background</h1>
+              <ol>
+                <li>bullet 1</li>
+                <li>bullet 2</li>
+                <li>bullet 3</li>
+              </ol>
+              <footer>
+                <p>Enter BG Footer Here</p>
+              </footer>
+          </article>
         </section>
-        <section class="experience-section">
-            <article>
-                <h1>Experience 1</h1>
-                <ol>
+        <section class="main-sec my-exp" id="experience-section">
+          <h1>MY EXPERIENCE</h1>
+          <article class="main-art exp-art">
+              <h1>Experience 1</h1>
+              <ol>
+                <li>bullet 1</li>
+                <li>bullet 2</li>
+                <li>bullet 3</li>
+              </ol>
+              <footer>
+                <p>Enter Exp Footer 2 Here</p>
+              </footer>
+          </article>
+          <article class="main-art exp-art">
+              <h1>Experience 2</h1>
+              <ol>
                   <li>bullet 1</li>
                   <li>bullet 2</li>
                   <li>bullet 3</li>
-                </ol>
-                <footer>
-                  <p>Enter Exp Footer 2 Here</p>
-                </footer>
-            </article>
-            <article>
-                <h1>Experience 2</h1>
-                <ol>
-                    <li>bullet 1</li>
-                    <li>bullet 2</li>
-                    <li>bullet 3</li>
-                </ol>
-                <footer>
-                  <p>Enter Exp Footer 2 Here</p>
-                </footer>
-            </article>
+              </ol>
+              <footer>
+                <p>Enter Exp Footer 2 Here</p>
+              </footer>
+          </article>
         </section>
-        <section class="projects-section">
-            <article>
-                <h1>Project 1</h1>
+        <section class="main-sec my-pr" id="projects-section">
+            <h1>MY PROJECTS</h1>
+            <article class="main-art proj-art">
+                <h1>Mars Rover Kata Website</h1>
+                <div class="description">
+                  <p>Frontend / UI Project to introduce myself to Angular [17] and TypeScript, for both of which I had minimal experience with. It is an implementation of the Mars Rover Kata exercise, where you are exploring Mars by sending remotely controlled vehicles to the surface of the planet, and you need to develop an "API" that translates the commands sent from earth to instructions that are understood by the rover you sent. 
+                    <br><br>
+                    However, that typical implementation of this exercise was only half of the project. I needed to learn Angular and TypeScript in order to create a functioning, real-time UI for the rover, which includes the following features:</p>
+                </div>
                 <ol>
-                  <li>bullet 1</li>
-                  <li>bullet 2</li>
-                  <li>bullet 3</li>
+                  <li>A visible "Mars" and a Rover which moves across it based on inputted commands.</li>
+                  <li>Separate command buttons, to allow for simple single commands to be inputted at a time.</li>
+                  <li>A command console input field, to allow for strings of multiple commands to be inputted at a time for execution.</li>
+                  <li>Visible "Spherical wrapping" for "Mars"/the rover, to simulate how a rover would actually go around the opposite side of a planet when crossing over a visible boundary/side of the planet.</li>
+                  <li>Visible obstacles & obstacle detection, to simulate how a rover would execute moves until it reached an obstacle.</li>
                 </ol>
                 <footer>
-                  <p>Enter Project Footer 2 Here</p>
+                  <p><a href="https://github.com/BigBass934/mars-rover-kata-website" target="_blank">Source Code</a></p>
                 </footer>
             </article>
-            <article>
+            <article class="main-art proj-art">
                 <h1>Project 2</h1>
+                <div class="description">
+                  <p>My Senior Project | A two-semester, enterprise-level project completed by upcoming graduates in the last year of RIT's Software Engineering (BS) program
+                    <br><br>
+                    Alongside my Agile team members, I developed T.R.E.K., or the Trail Registration Electronic Kiosk, a full-stack react web-application for authenticated users to pre-register and check-into trips to Adirondack Mountain Trails, for our sponsor organization, Adirondack Wildernes Advocates, Inc. (AWA)
+                    <br><br>
+                    We met weekly with the contact of my team’s sponsor organization, Adirondack Wilderness Advocates, Inc., to gather requirements, create concepts, and design architecture from scratch for the project.
+                    <br><br>
+                    The T.R.E.K. project consists of a react web-application, a kiosk system, and a postgreSQL database behind them:
+                  </p>
+                </div>
+                <h2>Web App</h2>
                 <ol>
-                    <li>bullet 1</li>
-                    <li>bullet 2</li>
-                    <li>bullet 3</li>
+                  <li>Allows authenticated users to pre-register and their intended trips to different points of interest in the Adirondack Mountains</li>
+                  <li>Developed aggregate data visualizers for authenticated Trail Managers from the AWA to view visualized aggregate past and current trail usage information, which allows them to execute accurate decision-making when delegating resources to specific trails and wilderness areas.</li>
+                </ol>
+                <h2>Kiosk System</h2>
+                <ol>
+                  <li>Internet-connected Trailhead kiosks will allow authenticated users to check-in to their pre registered trips, and allows for registration in-the-moment if a unauthenticated user had not pre-registered prior.</li>
+                  <li>Wrote detailed documentation documents for all aspects of the project, including code documentation, setup markdown files, and architecture documentation.</li>
+                  <li>Assured the project’s quality of code by developing a project test suite using Jest for debugging.</li>
                 </ol>
                 <footer>
-                  <p>Enter Project Footer 2 Here</p>
+                  <p><a href="https://github.com/Adirontech/trek-webapp" target="_blank">Source Code</a></p>
                 </footer>
             </article>
         </section>
-        <section class="interests-section">
-            <article>
+        <section class="main-sec my-int" id="interests-section">
+            <h1>MY INTERESTS</h1>
+            <article class="main-art int-art">
                 <h1>Interest 1</h1>
                 <ol>
                   <li>bullet 1</li>
@@ -86,7 +158,7 @@
                   <p>Enter Int Footer 2 Here</p>
                 </footer>
             </article>
-            <article>
+            <article class="main-art int-art">
                 <h1>Interest 2</h1>
                 <ol>
                     <li>bullet 1</li>
@@ -98,13 +170,13 @@
                 </footer>
             </article>
         </section>
-        <section class="contact-section">
-            <article>
+        <section class="main-sec my-con" id="contact-section">
+            <article class="main-art">
                 <h1>Contact Me!</h1>
                 <ol>
-                  <li>Phone Number: </li>
-                  <li>Email: </li>
-                  <li>LinkedIn: </li>
+                  <li>Phone Number: +1 (336) 406-8628</li>
+                  <li>Email: jonahamicek@gmail.com</li>
+                  <li>LinkedIn: https://www.linkedin.com/in/jonahamicek/</li>
                 </ol>
                 <footer>
                   <p>Enter contact Footer Here</p>
