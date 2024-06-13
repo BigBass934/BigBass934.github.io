@@ -62,11 +62,11 @@
           <h1>MY BACKGROUND</h1>
           <article class="main-art">
               <h1>My Background</h1>
-              <ol>
+              <ul>
                 <li>bullet 1</li>
                 <li>bullet 2</li>
                 <li>bullet 3</li>
-              </ol>
+              </ul>
               <footer>
                 <p>Enter BG Footer Here</p>
               </footer>
@@ -75,23 +75,28 @@
         <section class="main-sec my-exp" id="experience-section">
           <h1>MY EXPERIENCE</h1>
           <article class="main-art exp-art">
-              <h1>Experience 1</h1>
-              <ol>
-                <li>bullet 1</li>
-                <li>bullet 2</li>
-                <li>bullet 3</li>
-              </ol>
+              <h1>Python Microservices Developer</h1>
+              <h2>Design House</h2>
+              <div class="description">
+                <p>Created system concepts for, developed and debugged new modular, expandable functionality for the company’s main product, the Ideal Digital Circular, utilizing Python and the Microservices design pattern:</p>
+              </div>
+              <ul>
+                <li>Refactored old microservice code from a simple PHP environment to a more robust, structured Python environment.</li>
+                <li>Manually tested new data from real-time, client-provided -.csv data files to determine how they were manually processed by company employees, then developed a microservice to automate those processes, for each client.</li>
+                <li>Developed efficient workarounds for handling large client data through asynchronous API calls using the Python Packages AsyncIO and AIOHttp.</li>
+                <li>Collaborated in an Agile environment with co-workers to start writing in-depth documentation for projects overall using GitHub wiki functionality.</li>
+              </ul>
               <footer>
                 <p>Enter Exp Footer 2 Here</p>
               </footer>
           </article>
           <article class="main-art exp-art">
               <h1>Experience 2</h1>
-              <ol>
+              <ul>
                   <li>bullet 1</li>
                   <li>bullet 2</li>
                   <li>bullet 3</li>
-              </ol>
+              </ul>
               <footer>
                 <p>Enter Exp Footer 2 Here</p>
               </footer>
@@ -101,26 +106,64 @@
             <h1>MY PROJECTS</h1>
             <article class="main-art proj-art">
                 <h1>Mars Rover Kata Website</h1>
+                <div class="proj-img">
+                  <img src="./images/mars-project-image.png" alt="Mars Rover Project Image">
+                </div>
                 <div class="description">
                   <p>Frontend / UI Project to introduce myself to Angular [17] and TypeScript, for both of which I had minimal experience with. It is an implementation of the Mars Rover Kata exercise, where you are exploring Mars by sending remotely controlled vehicles to the surface of the planet, and you need to develop an "API" that translates the commands sent from earth to instructions that are understood by the rover you sent. 
                     <br><br>
                     However, that typical implementation of this exercise was only half of the project. I needed to learn Angular and TypeScript in order to create a functioning, real-time UI for the rover, which includes the following features:</p>
                 </div>
-                <ol>
+                <ul>
                   <li>A visible "Mars" and a Rover which moves across it based on inputted commands.</li>
                   <li>Separate command buttons, to allow for simple single commands to be inputted at a time.</li>
                   <li>A command console input field, to allow for strings of multiple commands to be inputted at a time for execution.</li>
                   <li>Visible "Spherical wrapping" for "Mars"/the rover, to simulate how a rover would actually go around the opposite side of a planet when crossing over a visible boundary/side of the planet.</li>
                   <li>Visible obstacles & obstacle detection, to simulate how a rover would execute moves until it reached an obstacle.</li>
-                </ol>
+                </ul>
                 <footer>
                   <p><a href="https://github.com/BigBass934/mars-rover-kata-website" target="_blank">Source Code</a></p>
                 </footer>
             </article>
             <article class="main-art proj-art">
-                <h1>Project 2</h1>
+                <h1>T.R.E.K. - Trail Registration Electronic Kiosk</h1>
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                  <!-- Full-width images with number and caption text -->
+                  <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="./images/Homepage_Desktop.png" style="width:100%">
+                    <div class="text">A screenshot of the T.R.E.K. home page on a Mac Desktop</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="./images/Registration_Desktop.png" style="width:100%">
+                    <div class="text">A screenshot of the T.R.E.K. trip registration page on a Mac Desktop</div>
+                  </div>
+
+                  <!-- <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="img3.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                  </div> -->
+
+                  <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <!-- <span class="dot" onclick="currentSlide(3)"></span> -->
+                </div>
+                
                 <div class="description">
-                  <p>My Senior Project | A two-semester, enterprise-level project completed by upcoming graduates in the last year of RIT's Software Engineering (BS) program
+                  <p>My Senior Project | A two-semester, enterprise-level, Open-Source project completed by upcoming graduates in the last year of RIT's Software Engineering (BS) program
                     <br><br>
                     Alongside my Agile team members, I developed T.R.E.K., or the Trail Registration Electronic Kiosk, a full-stack react web-application for authenticated users to pre-register and check-into trips to Adirondack Mountain Trails, for our sponsor organization, Adirondack Wildernes Advocates, Inc. (AWA)
                     <br><br>
@@ -130,41 +173,72 @@
                   </p>
                 </div>
                 <h2>Web App</h2>
-                <ol>
+                <ul>
                   <li>Allows authenticated users to pre-register and their intended trips to different points of interest in the Adirondack Mountains</li>
                   <li>Developed aggregate data visualizers for authenticated Trail Managers from the AWA to view visualized aggregate past and current trail usage information, which allows them to execute accurate decision-making when delegating resources to specific trails and wilderness areas.</li>
-                </ol>
+                </ul>
                 <h2>Kiosk System</h2>
-                <ol>
+                <ul>
                   <li>Internet-connected Trailhead kiosks will allow authenticated users to check-in to their pre registered trips, and allows for registration in-the-moment if a unauthenticated user had not pre-registered prior.</li>
                   <li>Wrote detailed documentation documents for all aspects of the project, including code documentation, setup markdown files, and architecture documentation.</li>
                   <li>Assured the project’s quality of code by developing a project test suite using Jest for debugging.</li>
-                </ol>
+                </ul>
                 <footer>
-                  <p><a href="https://github.com/Adirontech/trek-webapp" target="_blank">Source Code</a></p>
+                  <p>
+                    <br>
+                    <a class="url-link" href="https://github.com/Adirontech/trek-webapp" target="_blank">Source Code</a>
+                  </p>
+                  <br>
                 </footer>
             </article>
+            <article class="main-art proj-art">
+              <h1>TigerHub</h1>
+              <div class="description">
+                <p>A UI/UX School Project to create design requirements and a system concept for 'TigerHub', a mock replacement web application designed to consolidate a plethora of currently separate RIT services such as TigerCenter, SIS, and Eservices into a single centralized web application:
+                </p>
+              </div>
+              <ul>
+                <li>Collaborated with an Agile team of four students, utilizing SCRUM practices including daily standup meetings</li>
+                <li>Iteratively developed a fully-functional prototype for the frontend of TigerHub using Proto.io, and tested user experience satisfaction of it through randomly-selected RIT students and faculty.</li>
+              </ul>
+              <footer>
+                <p><a href="https://github.com/Adirontech/trek-webapp" target="_blank">Source Code</a></p>
+              </footer>
+          </article>
+          <article class="main-art proj-art">
+            <h1>Basstracker Bug Tracker</h1>
+            <div class="description">
+              <p>I developed a Bugtracker Web Application frontend using JavaScript and Vue.js that features sorting and searching capabilities for bug tickets. I also created an accompanying backend REST API for the application using JavaScript AWS DynamoDB.
+              </p>
+            </div>
+            <footer>
+              <br>
+              <p><a class="url-link" href="https://github.com/BigBass934/basstracker-bug-tracker" target="_blank">Frontend Source Code</a></p>
+              <p><a class="url-link" href="https://github.com/BigBass934/basstracker-bug-tracker-backend" target="_blank">Backend Source Code</a></p>
+              <br>
+            </footer>
+        </article>
         </section>
         <section class="main-sec my-int" id="interests-section">
             <h1>MY INTERESTS</h1>
             <article class="main-art int-art">
                 <h1>Interest 1</h1>
-                <ol>
+                <ul>
                   <li>bullet 1</li>
                   <li>bullet 2</li>
                   <li>bullet 3</li>
-                </ol>
+                </ul>
                 <footer>
                   <p>Enter Int Footer 2 Here</p>
                 </footer>
             </article>
             <article class="main-art int-art">
                 <h1>Interest 2</h1>
-                <ol>
+                <ul>
                     <li>bullet 1</li>
                     <li>bullet 2</li>
                     <li>bullet 3</li>
-                </ol>
+                </ul>
                 <footer>
                   <p>Enter Int Footer 2 Here</p>
                 </footer>
@@ -173,11 +247,11 @@
         <section class="main-sec my-con" id="contact-section">
             <article class="main-art">
                 <h1>Contact Me!</h1>
-                <ol>
+                <ul>
                   <li>Phone Number: +1 (336) 406-8628</li>
                   <li>Email: jonahamicek@gmail.com</li>
                   <li>LinkedIn: https://www.linkedin.com/in/jonahamicek/</li>
-                </ol>
+                </ul>
                 <footer>
                   <p>Enter contact Footer Here</p>
                 </footer>
