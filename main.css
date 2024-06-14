@@ -75,7 +75,7 @@ body {
 }
 
 .bottom-bar__content {
-    max-width: 1600px;
+    /* max-width: 1600px; */
     margin: 0 auto;
     padding: 0 30px;
     height: 60px;
@@ -193,7 +193,7 @@ body {
 }
 
 /* MEDIA QUERIES */
-@media(max-width: 650px) {    
+@media(max-width: 1200px) { /*650px) { */   
     .nav {
         position: fixed;
         top: 90px;
@@ -321,12 +321,21 @@ ul  {
 }
 
 img {
-    max-width:100%;
-    max-height:100%;
+    max-width:60%;
+    max-height:60%;
 }
 
 .proj-img {
-    object-fit: contain;
+    /* object-fit: contain; */
+    max-width:100%;
+    justify-content: center;
+    display:flex;
+
+    
+}
+
+.proj-img:hover{
+    cursor:zoom-in;
 }
 
 h1 {
@@ -402,6 +411,11 @@ h1 {
     position: absolute;
     background-color: rgba(105, 105, 105, 0.7);
   }
+
+  .dots {
+    text-align:center;
+    margin-bottom:15px;
+  }
   
   /* The dots/bullets/indicators */
   .dot {
@@ -413,6 +427,7 @@ h1 {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    
   }
   
   .active, .dot:hover {
