@@ -321,21 +321,30 @@ ul  {
 }
 
 img {
-    max-width:60%;
-    max-height:60%;
+    max-width:100%;
+    max-height:100%;
+    margin-left:33%;
 }
 
 .proj-img {
     /* object-fit: contain; */
-    max-width:100%;
+    max-width:60%;
     justify-content: center;
-    display:flex;
-
+    
     
 }
 
 .proj-img:hover{
     cursor:zoom-in;
+}
+
+.img--zoomed {
+    transform: scale(2,2);
+    margin-left: -19.5%;
+}
+
+.img--zoomed:hover{
+    cursor:zoom-out;
 }
 
 h1 {
@@ -363,7 +372,7 @@ h1 {
     top: 50%;
     width: auto;
     margin-top: -22px;
-    margin-left:3%;
+    margin-left:22%;
     padding: 16px;
     color: white;
     font-weight: bold;
@@ -377,7 +386,7 @@ h1 {
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
-    margin-right:3%;
+    margin-right:22%;
   }
   
   /* On hover, add a black background color with a little bit see-through */
@@ -392,8 +401,10 @@ h1 {
     padding: 8px 12px;
     position: absolute;
     bottom: 7%;
-    width: 94%;
-    margin-left:3%;
+    width:56%;
+    margin-left:22%;
+    /* width: 94%;
+    margin-left:3%; */
     border-radius: 5px;
     text-align: center;
     background-color: rgba(62, 62, 62, 0.7);
@@ -405,7 +416,7 @@ h1 {
     font-size: 16px;
     font-weight: bold;
     top:7%;
-    left:5%;
+    left:23%;
     padding: 7px;
     border-radius: 5px;
     position: absolute;

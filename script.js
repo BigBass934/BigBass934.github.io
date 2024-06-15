@@ -2,6 +2,7 @@ const navEl = document.querySelector('.nav');
 const hamburgerEl = document.querySelector('.hamburger');
 const bottomBarEl = document.querySelector('.bottom-bar');
 const topBarEl = document.querySelector('.top-bar');
+const projImgEl = document.querySelector('.proj-img');
 
 hamburgerEl.addEventListener('click', () => {
     if(!navEl.classList.contains('nav--open')){ 
@@ -20,6 +21,16 @@ hamburgerEl.addEventListener('click', () => {
     navEl.classList.toggle('nav--open');
     hamburgerEl.classList.toggle('hamburger--open');
 });
+
+projImgEl.addEventListener('click', () => {
+  console.log("click!");
+  console.log(projImgEl.classList.toString());
+  if(!projImgEl.classList.contains('img--zoomed')) {
+    projImgEl.classList.add('img--zoomed');
+  } else {
+    projImgEl.classList.remove('img--zoomed');
+  }
+})
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 360) {
