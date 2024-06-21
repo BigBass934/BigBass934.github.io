@@ -191,6 +191,391 @@ p {
     transition: all 0.3s ease-in-out;
 }
 
+/** MAIN STUFF
+
+-> Breakdown:
+    Body {
+        main-section {
+            main-heading {}
+            main-subheading {}
+            main-article {
+                article-content {
+                    article-heading {}
+                    article-subheading {}
+                    article-media {}
+                    article-desc {
+                        article-description {}
+                        article-lists {}
+                        article-footer {}
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    */
+
+    .main-sec{
+        background-color: rgba(105, 105, 105, 0.3);
+        padding-top: .1%;
+        padding-left: .7%;
+        padding-right: .7%;
+        padding-bottom: .2%;
+        margin: 20px;
+        /* box-shadow: 5px 4px 2px rgb(109, 87, 229, 0.4); */
+        scroll-margin-top: 105px;
+        border-radius: 10px;
+        box-shadow:0 2px 5px 2px rgba(25, 20, 53, 0.26), 0 2px 10px 0 rgba(25, 20, 53,0.22);
+    }
+    
+    .main-heading {
+        color:black;
+        padding:5px;
+        text-align:center;
+        font-size: 1.7em;
+    }
+    
+    .main-subheading {
+    
+    }
+    
+    .main-article{
+        background-color: rgba(238, 238, 238, 0.8);
+        padding-top: .4%;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-bottom: .4%;
+        margin: 10px;
+        border-radius:10px;
+        box-shadow:0 2px 5px 2px rgba(25, 20, 53, 0.16), 0 2px 10px 0 rgba(25, 20, 53,0.12);
+    
+    }
+    
+    .article-content {
+        
+    }
+    
+    .article-heading {
+        padding-top:10px;
+        font-size: 1.6em;
+    }
+    
+    .article-subheading {
+        padding-top:5px;
+        padding-bottom:5px;
+        font-size: 1.3em;
+    }
+    
+    .article-media {
+    
+    }
+    
+    .article-desc {
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-top: 2%;
+        padding-bottom: 1%;
+    
+        border-top:double;
+        border-top-width:5px;
+        border-color: darkslateblue;
+    
+        /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+        
+        font-size:22px;
+    }
+    
+    .article-lists {
+    
+    }
+    
+    
+    
+    h1 {
+        font-size:1.2em;
+    
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    .my-bg{
+        margin-left: 10%;
+        margin-right:10%;
+    }
+    
+    .my-exp{
+        margin-left: 10%;
+        margin-right:10%;
+    }
+    .my-pr{
+        margin-left: 10%;
+        margin-right:10%;
+    }
+    .my-int{
+        margin-left: 10%;
+        margin-right:10%;
+    }
+    .my-con{
+        margin-left: 10%;
+        margin-right:10%;
+    }
+    
+    .bg-content{
+        display:flex;
+        flex-direction:row;
+        padding-top:1%;
+    }
+    
+    .bg-media {
+        float:left;
+        width:34.99999%
+    }
+    
+    .profile-img-container {
+        width:100%; 
+        padding-left: 20%;
+        padding-top:2%;
+        padding-bottom:1%;
+        padding-right:25%;
+    }
+    
+    .profile-img {
+        vertical-align: middle;
+        box-shadow:0 2px 5px 1px rgba(25, 20, 53, 0.26), 0 2px 10px 0 rgba(25, 20, 53,0.22);
+    
+    }
+    
+    .bg-desc {
+        border-top:none;
+        border-left:double;
+        border-left-width:5px;
+        border-color: darkslateblue;
+        float:left;
+        width:64.99999%;
+    }
+    
+    .contact-msg {
+        font-style:italic;
+        text-align:center;
+    }
+    
+    .contact-lists {
+        text-align:center;
+        
+    }
+
+    .contact-list {
+        display:inline-block;
+        text-align:justify;
+    }
+    
+    .exp-article{
+    
+    }
+    
+    .proj-article{
+    
+    }
+    
+    .int-article{
+    
+    }
+    
+    .description-heading {
+        font-size: 1.2em;
+        padding-bottom:.3em;
+    }
+    
+    .url-link {
+        color:inherit;
+        text-decoration:underline;
+        font-weight:bold;
+    }
+    
+    img {
+        max-width:100%;
+        max-height:100%;
+    }
+    
+    .proj-img {
+        /* object-fit: contain; */
+        max-width:60%;
+        justify-content: center;
+        align-items:center;
+        margin: auto;
+    }
+    
+    .proj-img img {
+        width:100%;
+    }
+    
+    /* .proj-img:hover{
+        cursor:zoom-in;
+    } */
+    
+    .img--zoomed {
+        transform: scale(1.4);
+        /* margin-left: -19.5%; */
+        object-fit:contain;
+    }
+    
+    .img--zoomed:hover{
+        cursor:zoom-out;
+    }
+    
+    
+    
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+        display: flex;
+        flex-direction:column;
+        /* padding-top:90px; */
+      }
+      
+      /* Hide the images by default */
+      .mySlides {
+        display: table;
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        margin-left:22%;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        margin-right:22%;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 14%;
+        width:56%;
+        margin-left:22%;
+        /* width: 94%;
+        margin-left:3%; */
+        border-radius: 5px;
+        text-align: center;
+        background-color: rgba(62, 62, 62, 0.7);
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 16px;
+        font-weight: bold;
+        top:7%;
+        left:23%;
+        padding: 7px;
+        border-radius: 5px;
+        position: absolute;
+        background-color: rgba(105, 105, 105, 0.7);
+      }
+    
+      .dots {
+        text-align:center;
+        margin-bottom:15px;
+        
+    
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+    
+    
+      .bottom-footer {
+        text-align:center;
+        display:flex;
+        flex-direction:column;
+      }
+    
+      .toTopBtn {
+        /* display: none; Hidden by default */
+        transform: translateX(150%);
+        opacity: 0;
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: rgb(76, 0, 138); /* Set a background color */
+        box-shadow:0 2px 5px 2px rgba(25, 20, 53, 0.16), 0 2px 10px 0 rgba(25, 20, 53,0.12);
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 18px; /* Increase font size */
+        transition: all 0.2s;
+      }
+    
+      .toTopBtn:hover {
+        background-color: rgb(0, 138, 28); /* Add a dark-grey background on hover */
+      }
+    
+      .btn-visible {
+        /* display: block; */
+        opacity:1;
+        transform:translateX(0%);
+        transition: all 0.2s;
+      }
+    
+
 /* FOR JS */
 .nav--open {
     transform: translateX(0%) !important;
@@ -271,343 +656,21 @@ p {
     .hamburger {
         display: block;
     }
+
+    .main-article{
+        background-color: rgba(238, 238, 238, 0.8);
+        padding-top: .4%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 3%;
+        margin: 10px;
+        border-radius:10px;
+        box-shadow:0 2px 5px 2px rgba(25, 20, 53, 0.16), 0 2px 10px 0 rgba(25, 20, 53,0.12);
     
-}
-
-/** MAIN STUFF
-
--> Breakdown:
-    Body {
-        main-section {
-            main-heading {}
-            main-subheading {}
-            main-article {
-                article-content {
-                    article-heading {}
-                    article-subheading {}
-                    article-media {}
-                    article-desc {
-                        article-description {}
-                        article-lists {}
-                        article-footer {}
-                    }
-                }
-            }
-        }
     }
-
-
-
-    */
-
-.main-sec{
-    background-color: rgba(105, 105, 105, 0.3);
-    padding-top: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 1px;
-    margin: 20px;
-    /* box-shadow: 5px 4px 2px rgb(109, 87, 229, 0.4); */
-    scroll-margin-top: 105px;
-    border-radius: 10px;
-    box-shadow:0 2px 5px 2px rgba(25, 20, 53, 0.26), 0 2px 10px 0 rgba(25, 20, 53,0.22);
-}
-
-.main-heading {
-    color:black;
-    padding:5px;
-    text-align:center;
-    font-size: 1.7em;
-}
-
-.main-subheading {
-
-}
-
-.main-article{
-    background-color: rgba(238, 238, 238, 0.8);
-    padding-top: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    margin: 10px;
-    border-radius:10px;
-    box-shadow:0 2px 5px 2px rgba(25, 20, 53, 0.16), 0 2px 10px 0 rgba(25, 20, 53,0.12);
-
-}
-
-.article-content {
     
 }
 
-.article-heading {
-    padding-top:10px;
-    font-size: 1.6em;
-}
-
-.article-subheading {
-    padding-top:5px;
-    padding-bottom:5px;
-    font-size: 1.3em;
-}
-
-.article-media {
-
-}
-
-.article-desc {
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 2%;
-    padding-bottom: 1%;
-
-    border-top:double;
-    border-top-width:5px;
-    border-color: darkslateblue;
-
-    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-    
-    font-size:22px;
-}
-
-.article-lists {
-
-}
-
-
-
-h1 {
-    font-size:1.2em;
-
-}
-
-h2 {
-    font-size: 1.5em;
-}
-
-.my-bg{
-    margin-left: 10%;
-    margin-right:10%;
-}
-
-.my-exp{
-    margin-left: 10%;
-    margin-right:10%;
-}
-.my-pr{
-    margin-left: 10%;
-    margin-right:10%;
-}
-.my-int{
-    margin-left: 10%;
-    margin-right:10%;
-}
-.my-con{
-    margin-left: 10%;
-    margin-right:10%;
-}
-
-.exp-article{
-
-}
-
-.proj-article{
-
-}
-
-.int-article{
-
-}
-
-.description-heading {
-    font-size: 1.2em;
-    padding-bottom:.3em;
-}
-
-.url-link {
-    color:inherit;
-    text-decoration:underline;
-    font-weight:bold;
-}
-
-img {
-    max-width:100%;
-    max-height:100%;
-}
-
-.proj-img {
-    /* object-fit: contain; */
-    max-width:60%;
-    justify-content: center;
-    align-items:center;
-    margin: auto;
-}
-
-.proj-img img {
-    width:100%;
-}
-
-/* .proj-img:hover{
-    cursor:zoom-in;
-} */
-
-.img--zoomed {
-    transform: scale(1.4);
-    /* margin-left: -19.5%; */
-    object-fit:contain;
-}
-
-.img--zoomed:hover{
-    cursor:zoom-out;
-}
-
-
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-    display: flex;
-    flex-direction:column;
-    /* padding-top:90px; */
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: table;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    margin-left:22%;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-    margin-right:22%;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 14%;
-    width:56%;
-    margin-left:22%;
-    /* width: 94%;
-    margin-left:3%; */
-    border-radius: 5px;
-    text-align: center;
-    background-color: rgba(62, 62, 62, 0.7);
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 16px;
-    font-weight: bold;
-    top:7%;
-    left:23%;
-    padding: 7px;
-    border-radius: 5px;
-    position: absolute;
-    background-color: rgba(105, 105, 105, 0.7);
-  }
-
-  .dots {
-    text-align:center;
-    margin-bottom:15px;
-    
-
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-
-
-  .bottom-footer {
-    text-align:center;
-    display:flex;
-    flex-direction:column;
-  }
-
-  .toTopBtn {
-    /* display: none; Hidden by default */
-    transform: translateX(150%);
-    opacity: 0;
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: rgb(76, 0, 138); /* Set a background color */
-    box-shadow:0 2px 5px 2px rgba(25, 20, 53, 0.16), 0 2px 10px 0 rgba(25, 20, 53,0.12);
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-    transition: all 0.2s;
-  }
-
-  .toTopBtn:hover {
-    background-color: rgb(0, 138, 28); /* Add a dark-grey background on hover */
-  }
-
-  .btn-visible {
-    /* display: block; */
-    opacity:1;
-    transform:translateX(0%);
-    transition: all 0.2s;
-  }
 
 /**
 For the In-Development Image Zoom Functionality
