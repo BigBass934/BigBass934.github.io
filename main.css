@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:Arial;
+    /* font-size:large; */
 }
 
 a {
@@ -24,10 +25,18 @@ html {
 }
 
 body {
-    background-color: rgb(202, 199, 209);
+    /* background-color: rgb(202, 199, 209); */
+    background-color: rgb(20, 17, 27);
     vertical-align:middle;
     align-items: center;
     padding-top: 90px;
+}
+
+.sections-content {
+    background-color: rgb(202, 199, 209);
+    width:100%;
+    height:100%;
+    box-shadow:0 2px 5px 2px rgba(25, 20, 53, 0.26), 0 2px 10px 0 rgba(25, 20, 53,0.22);
 }
 
 p {
@@ -195,6 +204,91 @@ p {
     transition: all 0.3s ease-in-out;
 }
 
+.space {
+
+    & .space-bg{
+        width: 100vw;
+        height: 100vh;
+        background-image: url("./images/Space_Watercolor_1-1080p.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        filter: blur(5px);  
+        
+    }
+
+    & .space-text {
+        
+        background-color: rgba(0,0,0,0.6);
+        color: rgb(254, 149, 20);
+        font-weight:bold;
+        /* border: 3px solid rgb(94, 228, 255); */
+        border: 3px solid rgb(88, 217, 242);
+        border-width:7px;
+        border-radius: 10px;
+        box-shadow:0 2px 5px 2px rgba(25, 20, 53, 0.16), 0 2px 10px 0 rgba(25, 20, 53,0.12);
+        position: absolute;
+        top:50%;
+        left: 50%;
+        z-index:10;
+        width:80%;
+        padding: 38px;
+        text-align:center;
+        transform: translate(-50%, -50%);
+        
+    }
+
+    & .space-text:before {
+        background:none;
+        border-top: 4px solid rgb(255, 0, 0, .7);
+        border-bottom: 4px solid rgb(255, 0, 0, .7);
+        /* box-shadow: inset 0 0 10px 2px rgba(255, 55, 55, 1); */
+        box-shadow: inset 0px 25px 20px -20px rgba(255, 55, 55, 1),
+                    inset 0px -25px 20px -20px rgba(255, 55, 55, 1);
+        
+        content:"";
+        display:block;
+        position:absolute;
+        top:2px;
+        left:2px;
+        right:2px;
+        bottom:2px;
+        pointer-events:none;
+    }
+
+    & h1 {
+        font-size:3em;
+    }
+
+    .space-btn {
+        /* display: none; Hidden by default */
+        /* transform: translateX(150%); */
+        
+        /* position: fixed; Fixed/sticky position */
+        /* bottom: 20px; Place the button at the bottom of the page */
+        /* right: 30px; Place the button 30px from the right */
+        /* z-index: 99; Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: rgb(255, 125, 32); /* Set a background color */
+        box-shadow:0 2px 5px 2px rgba(25, 20, 53, 0.16), 0 2px 10px 0 rgba(25, 20, 53,0.12);
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 18px; /* Increase font size */
+        transition: all 0.2s;
+        margin-top:1%;
+        margin-bottom:.2%;
+        font-weight:bold;
+      }
+    
+      .space-btn:hover {
+        background-color: rgb(255, 165, 55); /* Add a dark-grey background on hover */
+      }
+}
+
 /** MAIN STUFF
 
 -> Breakdown:
@@ -307,6 +401,7 @@ p {
     }
     
     .my-bg{
+        margin-top:0%;
         margin-left: 10%;
         margin-right:10%;
     }
@@ -550,6 +645,8 @@ p {
         text-align:center;
         display:flex;
         flex-direction:column;
+        margin-top:0%;
+        color:white;
       }
     
       .toTopBtn {

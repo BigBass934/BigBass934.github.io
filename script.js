@@ -11,6 +11,7 @@ const dotsEl = document.querySelector('.dots');
 const layCon = document.querySelector('.layerContainer');
 const sectionsList = document.querySelectorAll("section[id]");
 const topBtn = document.getElementById('rollingTopBtn');
+const spaceBtn = document.getElementById('space-btn');
 
 
 
@@ -132,6 +133,10 @@ hamburgerEl.addEventListener('click', () => {
   navEl.classList.toggle('nav--open');
   hamburgerEl.classList.toggle('hamburger--open');
 });
+
+spaceBtn.addEventListener('click', () => {
+  window.location.href = "#background-section";
+})
 
 
 
