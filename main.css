@@ -700,7 +700,7 @@ p {
 }
 
 /* MEDIA QUERIES */
-@media(max-width: 1200px) { /*650px) { */   
+@media screen and (max-width: 1200px) { /*650px) { */   
     .mainNav {
         position: fixed;
         top: 90px;
