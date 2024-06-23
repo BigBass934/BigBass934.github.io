@@ -12,6 +12,7 @@ const layCon = document.querySelector('.layerContainer');
 const sectionsList = document.querySelectorAll("section[id]");
 const topBtn = document.getElementById('rollingTopBtn');
 const spaceBtn = document.getElementById('space-btn');
+const homeLink = document.querySelector('.home-link');
 
 
 
@@ -138,7 +139,15 @@ spaceBtn.addEventListener('click', () => {
   window.location.href = "#background-section";
 })
 
+topBtn.addEventListener('click', () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+})
 
+homeLink.addEventListener('click', () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+})
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 360) {
@@ -155,10 +164,8 @@ window.addEventListener('scroll', () => {
     topBtn.classList.remove('btn-visible');
   }
 
-  topBtn.addEventListener('click', () => {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  })
+
+
   // if (window.scrollY > 20) {//document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 
   // } else {
