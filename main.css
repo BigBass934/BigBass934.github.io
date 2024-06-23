@@ -214,7 +214,7 @@ p {
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        filter: blur(5px);  
+        filter: blur(0px);  
         
     }
 
