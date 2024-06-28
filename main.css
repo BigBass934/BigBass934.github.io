@@ -740,7 +740,8 @@ p {
       }
     
       .toTopBtn:hover {
-        background-color: rgb(0, 138, 28); /* Add a dark-grey background on hover */
+        /* background-color: rgb(0, 138, 28); Add a dark-grey background on hover */
+        background-color: rgb(130, 68, 231); /* Add a dark-grey background on hover */
       }
     
       .btn-visible {
@@ -892,18 +893,18 @@ p {
     }
 
     .description {
-        font-size:small;
+        font-size:16px;
     } 
 
 
 
     .article-lists {
 
-        font-size:small;
+        font-size:16px;
     }
 
     p {
-        font-size:small;
+        font-size:16px;
     }
 
     .my-bg{
@@ -937,21 +938,12 @@ p {
     
 }
 
-@media screen and (max-width: 600px){
 
-    .space {
-        & .space-subhead {
-            font-weight:lighter;
-            padding-top:4%;
-            padding-bottom:4%;
-        }
-    }
-}
 
 @media screen and (min-width:1200px) {
     .resize-both .child {
-        padding:.6%;
-        
+        /* padding:.6%; */
+        font-size:60cqmin;
     }
 }
 
@@ -964,9 +956,39 @@ p {
 
 @media screen and (max-width: 1200px) {
     .resize-both .child {
-        padding:.5%;
-        
+        /* padding:.5%; */
+        font-size:80cqmin;
     }
+}
+
+@media screen and (max-width:650px) {
+    .figcaption{
+        bottom:-12%;
+        margin-bottom:1%;
+        margin-top:1%;
+        height:10%;
+    }
+
+    .resize-both .child {
+        padding:.5%;
+        font-size:60cqmin;
+    }
+
+    .dots{
+        padding-top:3%;
+    }
+} 
+
+@media screen and (max-width: 600px){
+
+    .space {
+        & .space-subhead {
+            font-weight:lighter;
+            padding-top:4%;
+            padding-bottom:4%;
+        }
+    }
+
 }
 
 
